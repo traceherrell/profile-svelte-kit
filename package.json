@@ -13,7 +13,6 @@
     "@sveltejs/adapter-node": "next",
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.2.5",
-    "cookie": "^0.4.1",
     "cssnano": "^5.0.1",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
@@ -30,7 +29,8 @@
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^4.2.2",
-    "@lukeed/uuid": "^2.0.0"
+    "@lukeed/uuid": "^2.0.0",
+    "cookie": "^0.4.1"
   
   }
 }
