@@ -75,7 +75,7 @@
 				to pre fetch content and hydrate more of the application once it's loaded in the browser.
 				The main difference here is Svelte does not have a runtime nor use a virtual dom. All code
 				is compiled at build time. Here is the link to the
-				<a href="https://github.com/traceherrell/public-profile"> source.</a>
+				<a href="https://github.com/traceherrell/profile-svelte-kit"> source.</a>
 			</p>
 			<p />
 		</div>
