@@ -3,12 +3,17 @@
     import ButtonLink from '$lib/ButtonLink.svelte'
 	import ls1 from './launchstudio.png';
 	import jls1 from './j_search.png';
+	import tmo from './tmo.checkout.foa.svg';
 	let open = false;
 	const toggle = () => (open = !open);
     const navigate = () => {
        
         window.location.href =  "portfolio/bluetooth";
     }
+	const navigateTMO = () => {
+       
+	   window.location.href =  "portfolio/tmo";
+   }
     const navigateJLS= () => {
         window.location.href =  "https://www.johnlscott.com/search";
     }
@@ -34,6 +39,18 @@
 				members so I can't link directly to the application. Click below to view some screens.
 			</p>
 			<Button text="View Screen Shots" on:click={navigate }></Button>
+		</div>
+		<div class="sm:w-1/2 mb-10 px-4">
+			<div class="rounded-lg h-64 overflow-hidden">
+				<img alt="content" class="object-cover  h-full w-full" src={tmo} />
+			</div>
+			<h2 class="title-font text-2xl font-medium mt-6 mb-3">
+				TMO Checkout Sequence
+			</h2>
+			<p class="leading-relaxed text-base">
+				A sample sequence diagram that shows checkout interactions with down stream systems. This is used to get sign off and communicate proposed changes to dependant domains.
+			</p>
+			<Button text="View Full Screen" on:click={navigateTMO }></Button>
 		</div>
 		<div class="sm:w-1/2 mb-10 px-4">
 			<div class="rounded-lg h-64 overflow-hidden">
