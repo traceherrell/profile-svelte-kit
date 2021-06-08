@@ -1,12 +1,11 @@
 <script>
 	import profile from './profile_standing.jpg';
-	import  Button  from '$lib/Button.svelte';
-
+	import Button from '$lib/Button.svelte';
 
 	const scrollTo = (e) => {
-		console.log('got it')
+		console.log('got it');
 		e.stopPropagation();
-		
+
 		if (window) {
 			window.scrollTo({
 				top: 700,
@@ -35,7 +34,7 @@
 			<p class=" text-2xl font-light py-4 leading-7  ">
 				A Software Engineer from the Pacific North West, Seattle area. Want to know more about me?
 			</p>
-				<Button  text='Read More' on:click={scrollTo}/>
+			<Button text="Read More" on:click={scrollTo} />
 			<a class="text-blue-600 underline mx-4" href="https://www.linkedin.com/in/traceherrell/">
 				<i class="fa fa-lg fa-linkedin" />
 			</a>
@@ -59,9 +58,9 @@
 		</div>
 		<div>
 			<p>
-				As a lifetime learner I'm always interested in new technology and different approaches to
-				software engineering. I've built this profile site many different times. The last two were
-				with React and Vue respectively. This time I chose to use a new framework called <a
+				As a lifelong learner, I'm always fascinated by new technologies and different approaches to
+				software engineering. I've created this profile site several times, most recently with React
+				and Vue. This time I chose to use a new framework called <a
 					class="text-blue-600 underline"
 					href="https://svelte.dev/"
 				>
@@ -69,12 +68,12 @@
 				>. And even though I am Azure certified this site is hosted on Google Cloud Platform.
 			</p>
 			<p>
-				More specifically I am using Svelte's server-side rendering framework called SvelteKit.
-				Conceptually this is like Angular Universal and React's NextJS which use a node server like
-				express to initially render components on the first call on server. Then use service workers
-				to pre fetch content and hydrate more of the application once it's loaded in the browser.
-				The main difference here is Svelte does not have a runtime nor use a virtual dom. All code
-				is compiled at build time. Here is the link to the
+				I'm using Svelte's server-side rendering framework called SvelteKit. Conceptually, this is
+				like Angular Universal and React's NextJS, where node servers like express are used to
+				render components on the first call to the server. After the application is loaded in the
+				browser, it uses service workers to pre fetch content and fully hydrate the application.
+				Svelte is different from both of React and Vue in that it does not use a runtime nor virtual
+				dom. It compiles all the code at build time. Here is the link to the
 				<a href="https://github.com/traceherrell/profile-svelte-kit"> source.</a>
 			</p>
 			<p />
@@ -158,8 +157,6 @@
 		margin-bottom: 20px;
 		font-size: 1.1em;
 	}
-
-
 
 	.interest p {
 		font-size: 1em;
