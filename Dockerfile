@@ -8,7 +8,7 @@ RUN npm install --only=development
 
 COPY . .
 
-RUN npm run build
+RUN npm run build || true
 
 FROM node:16-alpine as production
 
@@ -30,4 +30,4 @@ CMD ["node", "build"]
 # docker run -d -p 3010:3000 --restart=always traceherrell/profile
 # docker run -d -p 3010:3000 traceherrell/profile
 
-# docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t localhost:5000/recipe-parser:latest --push .
+# docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t traceherrell/profile:latest --push .

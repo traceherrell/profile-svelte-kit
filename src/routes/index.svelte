@@ -1,5 +1,5 @@
 <script>
-	import profile from './profile_standing.jpg';
+	import profile from '../../static/profile_standing.jpg';
 	import Button from '$lib/Button.svelte';
 
 	const scrollTo = (e) => {
